@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -27,10 +33,14 @@ html, body {
     width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 33%;
+    top: 20%;
     color: white;
-    
-
+    display: flex;          
+    align-items: center;    
+    justify-content: center; 
+    gap: 1rem;       
+    font-size: clamp(1.5rem, 6vw + 1rem, 6.2rem);
+    font-family: 'Norse-Bold', 'Arial';    
 }
 #rightFormContainer {
     width: 60%;
@@ -39,5 +49,13 @@ html, body {
     right: 0;
 }
 #odinLogo {
-    position: relative;
+        height: 80%;           
+        width: auto;           
+        object-fit: contain;   
+}
+.gradient-text {
+    color: transparent; 
+    background: linear-gradient(0deg, #7c7c7c, #ffffff); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
 }
