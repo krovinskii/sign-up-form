@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="signUpMainContainer">
+        <div id="leftImageContainer">
+            <div id="logo"><img src="odin-lined.png" id="odinLogo">ODIN</div>
+        </div>
+        <div id="rightFormContainer">
+            <div id="topInformation"></div>
+            <div id="formMain">
+                <div class="form" id="firstNameDiv">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="form" id="lastNameDiv">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="form" id="emailDiv">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="user-email" placeholder="youremail@email.com" required>
+                </div>
+                <div class="form" id="phoneNumberDiv">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" required minlength="10" maxlength="10" placeholder="2">
+                </div>
+                <div class="form" id="passwordDiv">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                </div>
+                <div class="form" id="confirmPasswordDiv">
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <input type="password" name="password" id="password" required minlength="8">
+                </div>
+            </div>
+            <div id="makeAccount"></div>
+        </div>
+
+    </div>
     
 </body>
 </html>
