@@ -1,33 +1,38 @@
 @font-face {
     font-family: 'Norse-Bold';
-    src: url('Norse-Bold.woff') format('woff'),
+    src: url('Norse-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100%; 
+    font-family: 'roboto-regular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    overflow: hidden; 
 }
 
 #signUpMainContainer {
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
     position: relative;
+    display: flex;
 }
+
 #leftImageContainer {
     width: 40%;
     height: 100%;
     position: absolute;
     left: 0;
-    background-image:linear-gradient(to bottom, rgba(89, 89, 89, 0.52), rgba(0, 0, 0, 0.73)),
-    url('leftBackground.jpeg');  
+    background-image: linear-gradient(to bottom, rgba(89, 89, 89, 0.52), rgba(0, 0, 0, 0.73)),
+    url('leftBackground.jpeg');
     background-size: cover;
-    background-position: center center;  
+    background-position: center center;
     background-repeat: no-repeat;
-    image-rendering: -webkit-optimize-contrast;  
- 
+    image-rendering: -webkit-optimize-contrast;
 }
+
 #logo {
     height: 7rem;
     width: 100%;
@@ -35,27 +40,55 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);
     top: 20%;
     color: white;
-    display: flex;          
-    align-items: center;    
-    justify-content: center; 
-    gap: 1rem;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     font-size: clamp(1.5rem, 6vw + 1rem, 6.2rem);
-    font-family: 'Norse-Bold', 'Arial';    
+    font-family: 'Norse-Bold', 'Arial';
 }
+
+#odinLogo {
+    height: clamp(80px, 15vw, 90%);
+    width: auto;
+    object-fit: contain;
+}
+
+
+
+
+.gradient-text {
+    color: transparent;
+    background: linear-gradient(0deg, #bdbdbd, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 #rightFormContainer {
     width: 60%;
-    height: 100%;
+    height: 100vh; 
     position: absolute;
     right: 0;
+    background-color: #f1f1f1;
+    box-sizing: border-box; 
 }
-#odinLogo {
-        height: 80%;           
-        width: auto;           
-        object-fit: contain;   
+
+#topInformation {
+    width: 75%;
+    height: 15%; 
+    font-family: "Roboto", serif;
+    font-weight: 450;
+    margin: clamp(1rem, 5vw + 2rem, 5rem);
+    position: relative;
+    font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem);
+
 }
-.gradient-text {
-    color: transparent; 
-    background: linear-gradient(0deg, #7c7c7c, #ffffff); 
-    -webkit-background-clip: text; 
-    background-clip: text; 
+
+#formMain {
+    width: 100%;
+    height: 66%; 
+    background-color: #bdbdbd;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box; 
 }
