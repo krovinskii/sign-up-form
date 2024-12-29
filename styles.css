@@ -70,7 +70,7 @@ html, body {
     height: 100vh; 
     position: absolute;
     right: 0;
-    background-color:#e7e7e7;
+    background-color:#efefef;
     box-sizing: border-box; 
 }
 
@@ -82,9 +82,9 @@ html, body {
     left: 3rem;
     padding-top: 11rem;
     position: relative;
-    font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem);
+    font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem); /*need clamp more */
 }
-#belowTopInformation {
+#belowTopInformation { /*poisition stays the same? why? needs to scale with the rest */
     width: 100%;
     bottom: 0;
     position: relative;
@@ -97,19 +97,20 @@ html, body {
 
 #formMain {
     width: 100%;
-    height: 100%; 
-    background-color: #e7e7e7;
+    height: 33%; 
+    background-color: #efefef;
     position: relative;
     box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 #formTopText {
     font-family: "Roboto", serif;
     font-weight: 450;
     padding: clamp(0.5rem, 1.5vw + 0.5rem, 1.5rem) clamp(1rem, 3vw + 1rem, 3rem);
-    background-color: #efefef;
+    background-color: #f7f7f7;
     font-size: 1.75rem;
     text-align: left;
     color: #545454;
@@ -118,13 +119,13 @@ html, body {
     width: 100%;
     height: 50vh;
     display: flex;
-    background-color: #efefef;
+    background-color: #f7f7f7;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-start;  
     box-sizing: border-box;
     margin: 0;
-    padding: clamp(1rem, 3vw + 1rem, 3rem);
+    padding: 0px 0px 0px clamp(1rem, 3vw + 1rem, 3rem);
     row-gap: 1rem;  
   }
 .form {
@@ -135,6 +136,7 @@ html, body {
     padding: 0;
     gap: .3rem;
     color: rgb(71, 71, 71);
+    margin-right: -4rem;
 }
 .form input {
     width: 50%;
@@ -147,4 +149,27 @@ html, body {
     margin: 0;
     line-height: 1;
     font-size: 0.8rem;  
+    font-weight:500;
   }
+
+  #makeAccountHolder {
+    margin: clamp(0.5rem, 1.5vw + 0.5rem, 1.5rem) clamp(1rem, 3vw + 1rem, 3rem);
+  }
+  #makeAccountBtn {
+    background: #40464B;
+    color:#f7f7f7;
+    padding: 1rem 4.1rem;
+    border-radius: 9px;
+    border: 0;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  #accountText {
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+#logIn {
+    text-shadow: rgb(27, 27, 27) 1px 0 1px;
+    
+}
