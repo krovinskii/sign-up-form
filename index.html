@@ -22,38 +22,38 @@
                 <div id="formTopText">Let's do this!</div>
                 <div id="formInsideHolder">
                     <div class="form" id="firstNameDiv">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name" required>
+                    <label for="first_name">FIRST NAME*</label>
+                    <input type="text" name="first_name" id="first_name" required placeholder="*">
                     </div>
                     <div class="form" id="lastNameDiv">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name" required>
+                        <label for="last_name">LAST NAME*</label>
+                        <input type="text" name="last_name" id="last_name" required placeholder="*">
                     </div>
                     <div class="form" id="emailDiv">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="user-email" placeholder="youremail@email.com" required>
+                        <label for="email">EMAIL*</label>
+                        <input type="email" name="email" id="user-email" placeholder="youremail@email.com" required placeholder="*">
                     </div>
                     <div class="form" id="phoneNumberDiv">
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" name="phone_number" id="phone_number" required minlength="10" maxlength="10" placeholder="2">
+                        <label for="phone_number">PHONE NUMBER*</label>
+                        <input type="tel" name="phone_number" id="phone_number" required minlength="10" maxlength="10" placeholder="2812228765">
                     </div>
                     <div class="form" id="passwordDiv">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required minlength="8">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" name="password" id="password" required minlength="8" maxlength="14" placeholder="*">
                     </div>
                     <div class="form" id="confirmPasswordDiv">
-                        <label for="password">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="password" required minlength="8">
+                        <label for="password">CONFIRM PASSWORD*</label>
+                        <input type="password" name="password" id="passwordConfirm" required minlength="8" maxlength="14" placeholder="*">
                     </div>
                 </div>
             </div>
             <div id="makeAccountHolder">
-                <button id="makeAccountBtn">Create Account</button>
+                <button id="makeAccountBtn" type="submit">Create Account</button>
                 <div id="accountText">Already have an account? <span class="gradient-text" id="logIn">Log in</span></div>
             </div>
         </div>
 
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -67,32 +67,32 @@ html, body {
 
 #rightFormContainer {
     width: 60%;
-    height: 100vh; 
+    height: 100vh;
     position: absolute;
     right: 0;
-    background-color:#efefef;
-    box-sizing: border-box; 
-}
+    background-color: #efefef;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
 
-#topInformation {
+  #topInformation {
     width: 75%;
-    height: 13%; 
     font-family: "Roboto", serif;
     font-weight: 450;
-    left: 3rem;
-    padding-top: 11rem;
-    position: relative;
-    font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem); /*need clamp more */
-}
-#belowTopInformation { /*poisition stays the same? why? needs to scale with the rest */
+    padding-left: 3rem;
+    padding-top: clamp(6rem, 15vh, 11rem);
+    font-size: clamp(0.25rem, 3vw + 0.5rem, 2rem);
+  }
+  #belowTopInformation {
     width: 100%;
-    bottom: 0;
-    position: relative;
-    font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem);
+    font-size: clamp(0.25rem, 3vw + 0.5rem, 2rem);
     text-shadow: 1px 1px 1.5px black;
-    padding-left: 3rem; /*needs clamped */
-    padding-bottom: 4rem; /*needs clamped */
-}
+    padding-left: 3rem;
+    margin-top: clamp(2rem, 4vh, 4rem);
+    margin-bottom: clamp(2rem, 4vh, 4rem);
+  }
 
 
 #formMain {
@@ -172,4 +172,11 @@ html, body {
 #logIn {
     text-shadow: rgb(27, 27, 27) 1px 0 1px;
     
+}
+
+#password:invalid, #passwordConfirm:invalid {
+    border: 2px solid red;
+}
+#password:valid, #passwordConfirm:valid {
+    border: 2px solid rgb(24, 24, 53)
 }
