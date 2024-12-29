@@ -91,7 +91,7 @@ html, body {
     text-shadow: 1px 1px 1.5px black;
     padding-left: 3rem;
     margin-top: clamp(2rem, 4vh, 4rem);
-    margin-bottom: clamp(2rem, 4vh, 4rem);
+    margin-bottom: clamp(2rem, 6vh, 4.5rem);
   }
 
 
